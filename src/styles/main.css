@@ -1,0 +1,10 @@
+.container{
+    padding: 2% 10%;
+}
+
+.cards__section{
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}

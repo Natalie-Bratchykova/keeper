@@ -1,0 +1,18 @@
+.card{
+    background: #DCF2F1;
+    /* padding: 1% 2%; */
+    border-radius: .5em;
+    width: 20vw;
+    margin-top: 3%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.card__title{
+    padding-top: 6%;
+    padding-bottom: 3%;
+    background-color: #7FC7D9;
+    border-top-left-radius: .3em;
+    border-top-right-radius: .3em;
+    margin-top: 0;
+}
