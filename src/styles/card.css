@@ -16,3 +16,9 @@
     border-top-right-radius: .3em;
     margin-top: 0;
 }
+
+.delete-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+}

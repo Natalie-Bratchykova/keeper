@@ -23,8 +23,9 @@ export const Main = (props) => {
   // for adding
   let [inputState, setInputState] = React.useState({
     title: "",
-    seasons: 0,
-    episodes: 0,
+    seasons: "",
+    episodes: "",
+    isOpened: false
   });
 
   function handleInputValues(e) {
@@ -35,18 +36,21 @@ export const Main = (props) => {
           title: elem.value,
           seasons: prev.seasons,
           episodes: prev.episodes,
+          isOpened:true
         };
       } else if (elem.placeholder === "seasons") {
         return {
           title: prev.title,
           seasons: elem.value,
           episodes: prev.episodes,
+          isOpened:prev.isOpened
         };
       } else if (elem.placeholder === "episodes") {
         return {
           title: prev.title,
           seasons: prev.seasons,
           episodes: elem.value,
+          isOpened:prev.isOpened
         };
       }
     });
@@ -57,6 +61,7 @@ export const Main = (props) => {
     setNotes((prev) => {
       return [...prev, inputState];
     });
+    setInputState({title: "", seasons:"", episodes:"", isOpened:false})
   }
 
   // for notes deletion
@@ -75,6 +80,7 @@ export const Main = (props) => {
           seasonsValue={inputState.seasons}
           episodesValue={inputState.episodes}
           addNote={addNoteToList}
+          isOpened = {inputState.isOpened}
         />
         <section className="cards__section">
           {currentNotes.map((el, i) => renderCard(el,i, deleteNote))}

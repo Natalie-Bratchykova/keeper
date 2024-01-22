@@ -1,6 +1,6 @@
 import "../styles/card.css"
 import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
-
+import DeleteIcon from '@mui/icons-material/Delete';
 // create button and functionality for deleting
 export const Card = (props) =>{
     return(
@@ -9,9 +9,9 @@ export const Card = (props) =>{
             <p className="card__seasons">Seasons: {props.seasons}</p>
             <p className="card__episodes">Episodes: {props.episodes}</p>
 
-            <button onClick={(e)=>{
+            <button className="delete-btn" onClick={(e)=>{
                 props.deleteEl(props.id)
-            }}> delete</button>
+            }}> <DeleteIcon/> </button>
         </div>
     )
 }

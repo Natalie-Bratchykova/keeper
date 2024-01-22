@@ -5,6 +5,7 @@
     width: 100%;
     background: #7FC7D9;
     padding: 1% 10%;
+    z-index: 5;
 }
 
 .header__logo{
