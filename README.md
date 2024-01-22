@@ -5,6 +5,7 @@ Also here were used styles for react components.
 + HTML
 + CSS
 + JS (React)
++ Material UI
 
 
 Also here was used hook ```React.useState()``` to manipulate elements' states on the page. Additionaly was used library ```material ui``` to style components elements.
