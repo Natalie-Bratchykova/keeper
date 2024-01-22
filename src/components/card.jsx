@@ -1,4 +1,6 @@
 import "../styles/card.css"
+import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+
 // create button and functionality for deleting
 export const Card = (props) =>{
     return(
